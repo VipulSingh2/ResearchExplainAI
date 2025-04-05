@@ -1,6 +1,6 @@
 import streamlit as st
 from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain.prompt import load_prompt
+from langchain_core.prompts import load_prompt
 from dotenv import load_dotenv
 import os 
 
