@@ -11,7 +11,8 @@ if not auth_token:
     st.error("API key is not present. Firslty see that")
     st.stop
 
-  model = ChatGoogleGenerativeAI(model = "gemini-1.5-pro",
+model = ChatGoogleGenerativeAI(
+      model = "gemini-1.5-pro",
     temperature=0,
     max_tokens=None,
     max_retries=3,
