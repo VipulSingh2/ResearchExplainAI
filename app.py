@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 import os 
 
 load_dotenv()
-auth_token = os.getenv("GOOGLE_API_KEY")
+auth_token = st.secrets["api_key"]
 if not auth_token:
       st.error("API key is not present.Firstly see that")
       st.stop()
