@@ -15,7 +15,7 @@ model = ChatGoogleGenerativeAI(
     temperature=0,
     max_tokens=None,
     max_retries=3,
-    api_key=os.getenv(GOOGLE_API_KEY),
+    api_key=os.getenv(auth_token),
     repetition_penalty = 1.03)
 
 prompt = load_prompt("prompt.json",encoding='utf-8')  
