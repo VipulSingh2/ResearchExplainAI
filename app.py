@@ -19,5 +19,9 @@ model = ChatGoogleGenerativeAI(
     repetition_penalty = 1.03)
 
 prompt = load_prompt("prompt.json",encoding='utf-8')  
+paper_input = st.text_input("Enter the Research paper name.",placeholder=["Attention is all you need"])
+style_input = st.text_input("Enter the style in which you want to undersatnd this research paper",placeholder= ["Beginner friendly","intermediate","advance"])
+length_input = st.text_input("Enter in which length you want to understand this research paper.")
+
 
 st.header("ResearchExplainAI")
