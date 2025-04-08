@@ -25,3 +25,17 @@ prompt = load_prompt("prompt.json",encoding='utf-8')
 paper_input = st.text_input("Enter the Research paper name.",placeholder=["Attention is all you need"])
 style_input = st.text_input("Enter the style in which you want to undersatnd this research paper",placeholder= ["Beginner friendly","intermediate","advance"])
 length_input = st.text_input("Enter in which length you want to understand this research paper.")
+
+if st.button("Explain it!"):
+    template = {
+        "paper_input": paper_input,
+        "style_input": style_input,
+        "length_input": length_input
+    }
+
+    chain = prompt | model  
+    result =chain.invoke(template)
+    # result = model.invoke(template.format(paper_input=paper_input, style_input=style_input, length_input=length_input))
+    
+    # result = chain.invoke(template)
+    st.write(result.content)
