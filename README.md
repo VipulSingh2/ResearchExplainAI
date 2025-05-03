@@ -1,24 +1,33 @@
 # ResearchExplainAI
 
-![ResearchExplainAI](https://img.shields.io/badge/AI-Powered-blue) ![Status](https://img.shields.io/badge/Status-Active-green)
+![ResearchExplainAI](https://img.shields.io/badge/AI-Powered-blue) ![Status](https://img.shields.io/badge/Status-Active-green) ![Streamlit](https://img.shields.io/badge/Built%20With-Streamlit-orange)
 
-Welcome to **ResearchExplainAI**! This repository is designed to simplify and enhance your understanding of research papers using AI-powered techniques. Whether you're a student, researcher, or simply curious about research, this tool aims to make complex concepts easier to grasp.
+**ResearchExplainAI** is an AI-powered application designed to simplify and personalize the process of understanding complex research papers. By leveraging Google's Gemini-1.5-pro model, this app provides detailed explanations tailored to different expertise levels, styles, and lengths.
 
 ## 🌟 Key Features
-- **Summarization of Research Papers**: Get concise and clear summaries of lengthy papers.
-- **Keyword Highlighting**: Identify key concepts, terms, and their meanings.
-- **Interactive Q&A**: Ask specific questions about a paper and get AI-generated answers.
-- **Multi-Disciplinary Support**: Works across various domains including AI, biology, physics, and more.
+- **Customizable Explanations**: Choose the style (e.g., beginner-friendly, intermediate, or advanced) and length of the explanation to suit your needs.
+- **AI-Driven Analysis**: Uses Google Generative AI for fast and accurate results.
+- **User-Friendly Interface**: Built with Streamlit, ensuring an intuitive and interactive user experience.
+- **Flexible Input**: Just provide the research paper name, and the app does the heavy lifting for you.
 
-## 🚀 Getting Started
+## 🚀 How It Works
+1. Enter the research paper name in the input field.
+2. Specify the style (e.g., beginner-friendly, advanced) and desired explanation length.
+3. Click the **"Explain it!"** button to receive a tailored explanation powered by AI.
+
+The app uses:
+- **LangChain Prompts**: For creating structured, reusable prompt templates.
+- **Google Generative AI**: To process and generate explanations.
+- **Streamlit**: For a responsive web-based interface.
+
+## 🛠️ Installation and Setup
 
 ### Prerequisites
-Ensure you have the following installed:
 - [Python 3.8+](https://www.python.org/downloads/)
-- [pip](https://pip.pypa.io/en/stable/installation/)
-- Basic understanding of terminal/command-line operations.
+- [Streamlit](https://streamlit.io/)
+- API key for [Google Generative AI](https://cloud.google.com/ai)
 
-### Installation
+### Installation Steps
 1. Clone the repository:
    ```bash
    git clone https://github.com/VipulSingh2/ResearchExplainAI.git
@@ -30,43 +39,52 @@ Ensure you have the following installed:
    pip install -r requirements.txt
    ```
 
-3. Run the application:
-   ```bash
-   python main.py
+3. Add your Google API key to the `.env` file:
+   ```plaintext
+   GOOGLE_API_KEY=<your_api_key>
    ```
 
-## 🧠 How It Works
-1. Upload the research paper (PDF or text format).
-2. The AI processes the document to extract the main ideas.
-3. View the simplified summary, highlighted keywords, or ask questions for further clarification.
+4. Run the app:
+   ```bash
+   streamlit run main.py
+   ```
 
 ## 🎯 Use Cases
-- **Students**: Quickly understand the core ideas of papers for assignments or exams.
-- **Researchers**: Identify key findings and gaps in research.
-- **Educators**: Simplify papers to help students grasp difficult concepts.
+- **Students**: Quickly grasp complex papers for assignments or projects.
+- **Researchers**: Gain concise overviews or in-depth insights tailored to specific needs.
+- **Educators**: Simplify research concepts for teaching purposes.
+
+## 🧠 Example Inputs
+- **Paper Name**: "Attention is All You Need"
+- **Style**: Beginner-friendly
+- **Length**: Short summary
 
 ## 🤝 Contributing
-We welcome contributions to enhance ResearchExplainAI! Here's how you can help:
+We welcome contributions to enhance **ResearchExplainAI**! Here's how you can get involved:
 1. Fork the repository.
-2. Create a new branch:
+2. Create a new branch for your feature:
    ```bash
    git checkout -b feature-name
    ```
-3. Commit your changes and push the branch:
+3. Commit your changes:
    ```bash
    git commit -m "Add feature-name"
+   ```
+4. Push to your branch:
+   ```bash
    git push origin feature-name
    ```
-4. Open a pull request.
+5. Open a pull request.
 
-## 📜 License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+## ⚠️ Troubleshooting
+- Ensure your Google API key is valid and added to the `.env` file. The app will stop and show an error if the key is missing.
+
 
 ## 🌐 Connect
-Have questions or feedback? Reach out via:
+Have questions or feedback? Feel free to reach out:
 - [GitHub Issues](https://github.com/VipulSingh2/ResearchExplainAI/issues)
 - Email: vipulsingh2@example.com
 
 ---
 
-Thank you for using ResearchExplainAI! We hope this tool makes your journey through research papers more enjoyable and productive.
+Thank you for using **ResearchExplainAI**! We hope this tool makes exploring research papers a more enjoyable and productive experience.
