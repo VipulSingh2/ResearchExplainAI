@@ -88,4 +88,3 @@ Have questions or feedback? Feel free to reach out:
 ---
 
 Thank you for using **ResearchExplainAI**! We hope this tool makes exploring research papers a more enjoyable and productive experience.
-
